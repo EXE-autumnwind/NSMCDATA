@@ -2,8 +2,8 @@ import cv2
 import os
 
 # 设置参数
-image_folder = 'Y:\CNMDATA\wdbhdd2\Pull'  # 图片文件夹路径
-output_video = 'Y:\CNMDATA\wdbhdd2\Make\output.mp4'  # 输出视频文件名
+image_folder = '\Pull'  # 图片文件夹路径
+output_video = '\Make\output.mp4'  # 输出视频文件名
 frame_size = (825, 739)  # 视频分辨率
 fps = 60  # 帧率
 frames_per_image = 2  # 每张图使用的帧数

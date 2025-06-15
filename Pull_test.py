@@ -3,8 +3,8 @@ import requests
 from datetime import datetime, timedelta, timezone
 import time
 
-# 创建ld文件夹（如果不存在）
-os.makedirs('/home/luyii/hdd1t/CNMDATA/wdbhdd2/Pull', exist_ok=True)
+
+os.makedirs('/Pull', exist_ok=True)
 
 while True:
     # 获取当前UTC时间并减去20分钟
@@ -27,7 +27,7 @@ while True:
     response = requests.get(url)
     if response.status_code == 200:
         # 重命名文件为保存时间（UTC+8）
-        filename = f"/home/luyii/hdd1t/CNMDATA/wdbhdd2/Pull/{local_now.strftime('%Y%m%d%H%M%S')}.PNG"
+        filename = f"/Pull/{local_now.strftime('%Y%m%d%H%M%S')}.PNG"
         try:
             with open(filename, "wb") as file:
                 file.write(response.content)
