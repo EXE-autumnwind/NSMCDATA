@@ -3,5 +3,5 @@
 - MakeVideo.py可以帮你快速把文件夹中的所有图片集合成一个视频
 
 # 生成物
-- [示例视频](https://builddreams.cm/output.mp4)
+- [示例视频](https://builddreams.cn/output.mp4)
 
